@@ -113,11 +113,11 @@ console.log(c);
 
 
 
-if (a<b && a<c || c>a && b>a) {
-    alert('Среднее число: ' + b)
-}else if (b<a && b<c || c>b && c>a) {
+if (a<b && a>c || a>b && a<c) {
     alert('Среднее число: ' + a)
-}else if (c<a && c<b || a>c && c<b) {
+}else if (b<a && b>c || b<c && b>a) {
+    alert('Среднее число: ' + b)
+}else if (c<a && c>b || c<b && a>c) {
     alert('Среднее число: ' + c)
 }else if (a == b && b == c && a == c) {    
     alert('Все числа равны');
